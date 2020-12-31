@@ -30,7 +30,7 @@ U 1 1 5FEB1F6D
 P 10600 5550
 F 0 "P6" H 10500 6500 50  0000 L CNN
 F 1 "HEADER2" H 10350 6400 50  0000 L CNN
-F 2 "Connectors_Molex:Molex_Microfit3_Header_02x03_Angled_43045-060x" H 10600 5550 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x15" H 10600 5550 50  0001 C CNN
 F 3 "" H 10600 5550 50  0001 C CNN
 	1    10600 5550
 	1    0    0    -1  
@@ -639,8 +639,6 @@ $EndComp
 Wire Wire Line
 	1650 6000 1650 6050
 Wire Wire Line
-	1950 5700 2050 5700
-Wire Wire Line
 	2500 5700 2500 5550
 $Comp
 L power:+5V #PWR0117
@@ -715,17 +713,6 @@ F 3 "" H 1150 5850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:CP_Small C4
-U 1 1 5FEFBF30
-P 2050 5850
-F 0 "C4" H 2138 5896 50  0000 L CNN
-F 1 "47uF" H 2138 5805 50  0000 L CNN
-F 2 "Capacitors_SMD:CP_Elec_6.3x5.7" H 2050 5850 50  0001 C CNN
-F 3 "" H 2050 5850 50  0001 C CNN
-	1    2050 5850
-	1    0    0    -1  
-$EndComp
-$Comp
 L device:C_Small C6
 U 1 1 5FEFC93E
 P 2400 5850
@@ -737,12 +724,7 @@ F 3 "" H 2400 5850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2050 5750 2050 5700
-Connection ~ 2050 5700
-Wire Wire Line
 	2400 5700 2400 5750
-Wire Wire Line
-	2050 5700 2400 5700
 Wire Wire Line
 	2400 5700 2500 5700
 Connection ~ 2400 5700
@@ -763,17 +745,6 @@ F 3 "" H 1150 6050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CH340G_D-SUN-V3.0-cache:GND #PWR0121
-U 1 1 5FF12DA4
-P 2050 6050
-F 0 "#PWR0121" H 2050 5800 50  0001 C CNN
-F 1 "GND" H 2055 5877 50  0000 C CNN
-F 2 "" H 2050 6050 60  0000 C CNN
-F 3 "" H 2050 6050 60  0000 C CNN
-	1    2050 6050
-	1    0    0    -1  
-$EndComp
-$Comp
 L CH340G_D-SUN-V3.0-cache:GND #PWR0122
 U 1 1 5FF12F5E
 P 2400 6050
@@ -786,8 +757,6 @@ F 3 "" H 2400 6050 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	2400 5950 2400 6050
-Wire Wire Line
-	2050 5950 2050 6050
 Wire Wire Line
 	1150 5950 1150 6050
 $Comp
@@ -1254,7 +1223,7 @@ U 1 1 6016EE2F
 P 10400 3650
 F 0 "P5" V 10438 3828 50  0000 L CNN
 F 1 "MODBUS_2" V 10355 3828 39  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x15" H 10400 2450 50  0001 C CNN
+F 2 "Connectors_Molex:Molex_Microfit3_Header_02x03_Angled_43045-060x" H 10400 2450 50  0001 C CNN
 F 3 "" H 10400 2450 50  0001 C CNN
 	1    10400 3650
 	0    1    -1   0   
@@ -1596,4 +1565,6 @@ F 3 "" H 2100 7200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2100 7100 2100 7200
+Wire Wire Line
+	1950 5700 2400 5700
 $EndSCHEMATC
