@@ -518,7 +518,7 @@ F 3 "" H 6800 3450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6800 3450 6850 3450
-Text GLabel 6800 4250 0    39   Input ~ 0
+Text GLabel 5950 4550 2    39   Input ~ 0
 DT5
 Text GLabel 6800 4150 0    39   Input ~ 0
 SCK5
@@ -530,7 +530,7 @@ Text GLabel 6800 3850 0    39   Input ~ 0
 DT7
 Text GLabel 6800 3750 0    39   Input ~ 0
 SCK7
-Text GLabel 5950 4550 2    39   Input ~ 0
+Text GLabel 6800 4250 0    39   Input ~ 0
 DT8
 Text GLabel 6800 4550 0    39   Input ~ 0
 SCK8
