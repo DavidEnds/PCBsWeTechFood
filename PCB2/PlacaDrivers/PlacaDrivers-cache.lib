@@ -1,26 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# SparkFun-Aesthetics_VIN
+# PlacaDrivers-rescue_MOSFET-NCHANNELFDD8780-SparkFun-DiscreteSemi
 #
-DEF SparkFun-Aesthetics_VIN #SUPPLY 0 40 N N 1 L P
-F0 "#SUPPLY" 0 0 50 H I L BNN
-F1 "SparkFun-Aesthetics_VIN" -40 140 50 H V L BNN
-F2 "" 0 0 39 H I C CNN
-F3 "" 0 0 39 H I C CNN
-DRAW
-P 2 1 0 0 0 0 0 100 N
-P 2 1 0 0 0 100 -30 50 N
-P 2 1 0 0 30 50 0 100 N
-X VIN ~ 0 0 100 U 40 40 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# SparkFun-DiscreteSemi_MOSFET-NCHANNELFDD8780
-#
-DEF SparkFun-DiscreteSemi_MOSFET-NCHANNELFDD8780 Q 0 40 N N 1 L N
+DEF PlacaDrivers-rescue_MOSFET-NCHANNELFDD8780-SparkFun-DiscreteSemi Q 0 40 N N 1 L N
 F0 "Q" 200 100 50 H V L BNN
-F1 "SparkFun-DiscreteSemi_MOSFET-NCHANNELFDD8780" 200 0 50 H V L BNN
+F1 "PlacaDrivers-rescue_MOSFET-NCHANNELFDD8780-SparkFun-DiscreteSemi" 200 0 50 H V L BNN
 F2 "DPAK" 30 150 20 H I C CNN
 F3 "" 0 0 60 H I C CNN
 $FPLIST
@@ -64,6 +49,21 @@ P 2 1 0 0 125 30 135 40 N
 X G 1 -300 0 100 R 40 40 1 1 P
 X S 3 0 -200 100 U 40 40 1 1 P
 X D 4 0 200 100 D 40 40 1 1 P
+ENDDRAW
+ENDDEF
+#
+# SparkFun-Aesthetics_VIN
+#
+DEF SparkFun-Aesthetics_VIN #SUPPLY 0 40 N N 1 L P
+F0 "#SUPPLY" 0 0 50 H I L BNN
+F1 "SparkFun-Aesthetics_VIN" -40 140 50 H V L BNN
+F2 "" 0 0 39 H I C CNN
+F3 "" 0 0 39 H I C CNN
+DRAW
+P 2 1 0 0 0 0 0 100 N
+P 2 1 0 0 0 100 -30 50 N
+P 2 1 0 0 30 50 0 100 N
+X VIN ~ 0 0 100 U 40 40 1 1 W N
 ENDDRAW
 ENDDEF
 #

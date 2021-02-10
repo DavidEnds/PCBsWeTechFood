@@ -1,0 +1,12 @@
+Reference, Quantity, Value, Footprint, Datasheet
+D1 ,1,"MMSZ4700-G3-08","Diode_SMD:D_SOD-123","https://en.wikipedia.org/wiki/Zener_diode"
+JP1 ,1,"RX_JUM","Jumpers:SMT-JUMPER_2_NO_NO-SILK",""
+JP2 ,1,"TX_JUM","Jumpers:SMT-JUMPER_2_NO_NO-SILK",""
+P1 P2 P4 P5 ,4,"CONN_01X03","Connectors_Molex:Molex_SPOX-5267_22-03-5035_03x2.54mm_Straight",""
+P3 ,1,"PWR-Servo","Connectors_Molex:Molex_Microfit3_Header_02x01_Angled_43045-020x",""
+P6 ,1,"HEADER1","Pin_Headers:Pin_Header_Straight_1x15_Pitch2.54mm",""
+P7 ,1,"HEADER2","Pin_Headers:Pin_Header_Straight_1x15_Pitch2.54mm",""
+Q1 ,1,"FDD9411L-f085","TO_SOT_Packages_SMD:TO-252-3_TabPin4",""
+R1 ,1,"10k","Resistors_SMD:R_0805",""
+R2 ,1,"20k","Resistors_SMD:R_0805",""
+U1 ,1,"74LS241","frizzy_ics:SOIC127P1030X265-20N","http://www.ti.com/lit/gpn/sn74LS241"

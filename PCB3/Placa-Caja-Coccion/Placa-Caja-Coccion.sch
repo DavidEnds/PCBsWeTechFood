@@ -1097,29 +1097,10 @@ F 3 "" H 3200 7750 60  0001 C CNN
 	1    3200 7750
 	1    0    0    -1  
 $EndComp
-$Comp
-L conn:CONN_01X02 P1
-U 1 1 60085B48
-P 2000 6250
-F 0 "P1" H 2078 6291 50  0000 L CNN
-F 1 "RELAY_OUT" H 2078 6200 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 2000 6250 50  0001 C CNN
-F 3 "" H 2000 6250 50  0001 C CNN
-	1    2000 6250
-	1    0    0    -1  
-$EndComp
-Text GLabel 1750 6400 3    39   Input ~ 0
+Text GLabel 2450 6250 0    39   Input ~ 0
 COM
-Text GLabel 1750 6100 1    39   Input ~ 0
+Text GLabel 2500 6050 1    39   Input ~ 0
 NO
-Wire Wire Line
-	1750 6100 1750 6200
-Wire Wire Line
-	1750 6200 1800 6200
-Wire Wire Line
-	1800 6300 1750 6300
-Wire Wire Line
-	1750 6300 1750 6400
 $Comp
 L conn:CONN_01X02 P2
 U 1 1 600A6952
@@ -1171,17 +1152,6 @@ F 3 "" H 2850 8200 60  0000 C CNN
 	1    2850 8200
 	1    0    0    -1  
 $EndComp
-$Comp
-L CH340G_D-SUN-V3.0-cache:GND #PWR09
-U 1 1 601042C6
-P 3200 8200
-F 0 "#PWR09" H 3200 7950 50  0001 C CNN
-F 1 "GND" H 3205 8027 50  0000 C CNN
-F 2 "" H 3200 8200 60  0000 C CNN
-F 3 "" H 3200 8200 60  0000 C CNN
-	1    3200 8200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3200 8200 3200 7950
 Wire Wire Line
@@ -1212,17 +1182,6 @@ Wire Wire Line
 	3200 7550 3200 7400
 Wire Wire Line
 	3200 7400 3300 7400
-$Comp
-L CH340G_D-SUN-V3.0-cache:GND #PWR012
-U 1 1 6014D87D
-P 4150 8100
-F 0 "#PWR012" H 4150 7850 50  0001 C CNN
-F 1 "GND" H 4155 7927 50  0000 C CNN
-F 2 "" H 4150 8100 60  0000 C CNN
-F 3 "" H 4150 8100 60  0000 C CNN
-	1    4150 8100
-	1    0    0    -1  
-$EndComp
 Text GLabel 3300 7400 2    39   Input ~ 0
 OUT-
 Text GLabel 4150 7800 1    39   Input ~ 0
@@ -1463,4 +1422,51 @@ Wire Wire Line
 NoConn ~ 7150 5200
 Wire Wire Line
 	7150 6100 7200 6100
+Text Notes 2050 5100 0    39   ~ 0
+90R (R calculada)
+$Comp
+L power:GNDA #PWR0101
+U 1 1 601D3C17
+P 3200 8200
+F 0 "#PWR0101" H 3200 7950 50  0001 C CNN
+F 1 "GNDA" H 3205 8027 50  0000 C CNN
+F 2 "" H 3200 8200 50  0001 C CNN
+F 3 "" H 3200 8200 50  0001 C CNN
+	1    3200 8200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0102
+U 1 1 601D493E
+P 4150 8100
+F 0 "#PWR0102" H 4150 7850 50  0001 C CNN
+F 1 "GNDA" H 4155 7927 50  0000 C CNN
+F 2 "" H 4150 8100 50  0001 C CNN
+F 3 "" H 4150 8100 50  0001 C CNN
+	1    4150 8100
+	1    0    0    -1  
+$EndComp
+$Comp
+L conn:CONN_01X03 P1
+U 1 1 600C7E33
+P 2750 6250
+F 0 "P1" H 2828 6291 50  0000 L CNN
+F 1 "RELAY_OUT" H 2828 6200 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 2750 6250 50  0001 C CNN
+F 3 "" H 2750 6250 50  0001 C CNN
+	1    2750 6250
+	1    0    0    -1  
+$EndComp
+Text GLabel 2500 6500 3    39   Input ~ 0
+NC
+Wire Wire Line
+	2550 6150 2500 6150
+Wire Wire Line
+	2500 6150 2500 6050
+Wire Wire Line
+	2450 6250 2550 6250
+Wire Wire Line
+	2550 6350 2500 6350
+Wire Wire Line
+	2500 6350 2500 6500
 $EndSCHEMATC
